@@ -259,11 +259,11 @@ This project is licensed under the MIT License - see [License.md](License.md) fo
 
 ## 📧 Contact & Support
 
-**Developer:** [Your Name]  
+**Developer:** Ishay Wirthiem
 **Institution:** University of Pittsburgh  
-**Course:** [Course Name/Number]  
-**Email:** [Your Email]  
-**GitHub:** [Your GitHub Profile]
+**Course:** ENGCMP 0600
+**Email:** isw26@pitt.edu
+**GitHub:** IshayWir
 
 **For Technical Issues:**
 - Open a GitHub issue in this repository

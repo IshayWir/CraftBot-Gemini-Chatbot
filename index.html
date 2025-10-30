@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watercolor Companion Bot | AI-Powered Creative Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 50px;
+            margin-top: -30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #667eea;
+            margin: 40px 0 20px 0;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin: 30px 0 15px 0;
+            font-size: 1.5em;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        .emoji {
+            font-size: 2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        ul {
+            margin: 15px 0 15px 25px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #764ba2;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .tech-badge {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+
+        .project-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .project-info a {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Watercolor Companion Bot</h1>
+            <p class="tagline">A gentle AI guide for learning watercolor painting while nurturing your creative spirit</p>
+            
+            <div class="cta-buttons">
+                <a href="https://github.com/IshayWir/CraftBot-Gemini-Chatbot" class="btn btn-primary" target="_blank">
+                    View on GitHub
+                </a>
+                <a href="#" class="btn btn-secondary" id="tryBotBtn">
+                    Try the Bot
+                </a>
+            </div>
+        </header>
+
+        <div class="content">
+            <section id="overview">
+                <h2>📖 Overview</h2>
+                <p>The Watercolor Companion Bot is a custom AI assistant built on Google Gemini Gems that serves as both a watercolor instructor and emotional support companion. It provides step-by-step painting guidance while acknowledging the emotional journey of creative learning.</p>
+                
+                <div class="highlight-box">
+                    <strong>Core Philosophy:</strong> Art is not just about technique—it's about expression, exploration, and emotional well-being. This bot meets you where you are, both technically and emotionally.
+                </div>
+            </section>
+
+            <section id="features">
+                <h2>✨ What It Does</h2>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <span class="emoji">🖌️</span>
+                        <h3>Technical Instruction</h3>
+                        <ul>
+                            <li>Teaches 8+ watercolor techniques</li>
+                            <li>Explains color theory & mixing</li>
+                            <li>10 step-by-step projects</li>
+                            <li>Troubleshoots common problems</li>
+                            <li>Budget-friendly materials guide</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="emoji">💙</span>
+                        <h3>Emotional Support</h3>
+                        <ul>
+                            <li>Checks in with your emotional state</li>
+                            <li>Encourages when you're frustrated</li>
+                            <li>Normalizes mistakes as learning</li>
+                            <li>Suggests projects based on mood</li>
+                            <li>Celebrates progress, not perfection</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="emoji">🎯</span>
+                        <h3>Adaptive Guidance</h3>
+                        <ul>
+                            <li>Tailors to your skill level</li>
+                            <li>Calming exercises for stress</li>
+                            <li>Energizing projects for motivation</li>
+                            <li>Simple wins for confidence</li>
+                            <li>Challenges when you're ready</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="for-who">
+                <h2>👥 Who It's For</h2>
+                
+                <h3>The Stress-Relief Seeker</h3>
+                <p>Looking for a creative outlet to manage anxiety or decompress after difficult days.</p>
+                <p><strong>What you'll find:</strong> Meditative exercises, calming color palettes, process-focused projects with no pressure for perfection.</p>
+
+                <h3>The Curious Beginner</h3>
+                <p>Always wanted to learn watercolor but don't know where to start.</p>
+                <p><strong>What you'll find:</strong> Clear, step-by-step guidance starting from absolute basics, budget-friendly supply recommendations, and patient explanations.</p>
+
+                <h3>The Perfectionism Fighter</h3>
+                <p>Want to create but your inner critic is loud.</p>
+                <p><strong>What you'll find:</strong> Permission to experiment, reframing of "mistakes," and encouragement to embrace watercolor's unpredictable nature.</p>
+
+                <h3>The Skill Builder</h3>
+                <p>Have some art background and want structured watercolor learning.</p>
+                <p><strong>What you'll find:</strong> Progressive technique instruction, troubleshooting for specific problems, and projects that build on each other.</p>
+            </section>
+
+            <section id="training">
+                <h2>📚 Training Data & Knowledge Base</h2>
+                <p>This bot was trained on curated watercolor instruction and emotional support content. All training materials are available in the GitHub repository.</p>
+
+                <h3>Training Files:</h3>
+                <ul>
+                    <li><strong>watercolor-techniques.md</strong> - 8 core techniques with step-by-step instructions</li>
+                    <li><strong>color-theory-guide.md</strong> - Color fundamentals and practical applications</li>
+                    <li><strong>beginner-projects.md</strong> - 10 projects organized by difficulty and emotional benefit</li>
+                    <li><strong>emotional-support-phrases.txt</strong> - 100+ phrases for various emotional states</li>
+                    <li><strong>materials-guide.md</strong> - Comprehensive supply information and budget recommendations</li>
+                    <li><strong>troubleshooting.md</strong> - Solutions for common watercolor problems</li>
+                </ul>
+
+                <p><strong>Content Verification:</strong> All technical content was cross-referenced with professional watercolor instruction (YouTube tutorials, art education resources, product reviews). Emotional support language was reviewed for therapeutic appropriateness.</p>
+            </section>
+
+            <section id="technical">
+                <h2>🛠️ Technical Details</h2>
+                
+                <div class="tech-stack">
+                    <span class="tech-badge">Google Gemini Gems</span>
+                    <span class="tech-badge">AI/ML</span>
+                    <span class="tech-badge">Natural Language Processing</span>
+                    <span class="tech-badge">Conversational AI</span>
+                    <span class="tech-badge">GitHub Pages</span>
+                </div>
+
+                <h3>Configuration:</h3>
+                <ul>
+                    <li>Custom system instructions defining personality and behavior</li>
+                    <li>6 knowledge files uploaded for reference (~15,000 words total)</li>
+                    <li>Configured to prioritize emotional check-ins before technical instruction</li>
+                    <li>Tested with 16+ scenarios covering emotional states, technical questions, and edge cases</li>
+                </ul>
+
+                <h3>System Prompt Principles:</h3>
+                <ul>
+                    <li>Always ask about user's emotional state</li>
+                    <li>Use warm, patient, encouraging language</li>
+                    <li>Normalize mistakes and struggle</li>
+                    <li>Provide clear, step-by-step instruction</li>
+                    <li>Celebrate effort and progress</li>
+                    <li>Maintain boundaries (suggest professional support when appropriate)</li>
+                </ul>
+            </section>
+
+            <section id="educational">
+                <h2>🎓 Educational Value</h2>
+                
+                <h3>AI Literacy Skills Developed:</h3>
+                <ul>
+                    <li>Understanding AI capabilities and limitations</li>
+                    <li>Effective prompt engineering for specific use cases</li>
+                    <li>Verifying and validating AI-generated content</li>
+                    <li>Ethical AI use and transparent documentation</li>
+                </ul>
+
+                <h3>Computational Thinking Applied:</h3>
+                <ul>
+                    <li>Problem decomposition (breaking watercolor into teachable components)</li>
+                    <li>Pattern recognition (common user needs and pain points)</li>
+                    <li>Algorithmic thinking (structured learning progressions)</li>
+                    <li>Abstraction (generalizing solutions across contexts)</li>
+                </ul>
+
+                <h3>Computer Science Concepts:</h3>
+                <ul>
+                    <li>Chatbot design and conversational AI</li>
+                    <li>Knowledge base architecture</li>
+                    <li>User experience design</li>
+                    <li>Agile development principles (iterative testing and refinement)</li>
+                </ul>
+            </section>
+
+            <div class="project-info">
+                <h2 style="color: white; border: none; margin-top: 0;">📂 Repository & Resources</h2>
+                <p><strong>GitHub Repository:</strong> <a href="https://github.com/IshayWir/CraftBot-Gemini-Chatbot" target="_blank">IshayWir/CraftBot-Gemini-Chatbot</a></p>
+                
+                <p style="margin-top: 20px;"><strong>Repository includes:</strong></p>
+                <ul style="margin-left: 20px;">
+                    <li>Complete documentation (README, License, Inclusive statement)</li>
+                    <li>All 6 training files in SystemMemory/ directory</li>
+                    <li>System prompts and testing documentation</li>
+                    <li>UX research and design process</li>
+                    <li>Full AI use verification and transparency documentation</li>
+                </ul>
+
+                <p style="margin-top: 20px;"><strong>Try the Bot:</strong> <a href="https://gemini.google.com/gem/1gXuZWPkFPVOY3iK8aTfIFX-YByZC-BRQ?usp=sharing" target="_blank">Launch Watercolor Companion Bot</a></p>
+            </div>
+
+            <section id="acknowledgments">
+                <h2>🙏 Acknowledgments</h2>
+                
+                <h3>Inspiration:</h3>
+                <ul>
+                    <li>The supportive art teacher who makes every student feel capable</li>
+                    <li>Art therapy principles that recognize creativity's emotional value</li>
+                    <li>The watercolor community's emphasis on embracing happy accidents</li>
+                </ul>
+
+                <h3>Tools & Platforms:</h3>
+                <ul>
+                    <li>Google Gemini Gems for AI infrastructure</li>
+                    <li>GitHub for version control and documentation</li>
+                    <li>Claude AI for content generation assistance</li>
+                </ul>
+
+                <h3>Learning Resources Referenced:</h3>
+                <ul>
+                    <li>YouTube watercolor channels (The Mind of Watercolor, Makoccino)</li>
+                    <li>Blick Art Materials for product research</li>
+                    <li>Color theory foundations from established art education</li>
+                </ul>
+            </section>
+
+            <section id="philosophy">
+                <h2>💭 Final Thoughts</h2>
+                <p>Watercolor is a beautiful metaphor for life—you can't control everything, mistakes become part of the art, and sometimes the best results come from letting go. This bot embodies that philosophy, meeting you with patience and encouragement wherever you are in your creative journey.</p>
+                
+                <p>Whether you're here to learn a new skill, find peace in creativity, or simply play with color, you're welcome. There's no judgment, no competition, no pressure. Just you, water, and paint.</p>
+                
+                <p><strong>Happy painting! 🎨💙</strong></p>
+                
+                <div class="highlight-box" style="margin-top: 30px; text-align: center; font-style: italic;">
+                    "Every artist was first an amateur." - Ralph Waldo Emerson
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p><strong>Watercolor Companion Bot</strong> | University of Pittsburgh | 2025</p>
+            <p>Developed by Ishay Wirthiem | <a href="https://github.com/IshayWir/CraftBot-Gemini-Chatbot" target="_blank">View Repository</a></p>
+            <p style="margin-top: 20px; opacity: 0.8;">Built with AI assistance, verified by human judgment, designed with empathy.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Update these with your actual links
+        const GEM_LINK = 'https://gemini.google.com/gem/1gXuZWPkFPVOY3iK8aTfIFX-YByZC-BRQ?usp=sharing';
+        
+        document.getElementById('tryBotBtn').addEventListener('click', function(e) {
+            if (GEM_LINK === 'YOUR_GEMINI_GEM_LINK_HERE') {
+                e.preventDefault();
+                alert('Gemini Gem link not yet configured. Add your link in the HTML file.');
+            } else {
+                window.open(GEM_LINK, '_blank');
+            }
+        });
+        
+        document.getElementById('tryBotBtn2').addEventListener('click', function(e) {
+            if (GEM_LINK === 'YOUR_GEMINI_GEM_LINK_HERE') {
+                e.preventDefault();
+                alert('Gemini Gem link not yet configured. Add your link in the HTML file.');
+            } else {
+                window.open(GEM_LINK, '_blank');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -220,6 +220,5 @@ Inclusivity isn't about perfection—it's about intention and continuous effort.
 
 ---
 
-**Last updated:** [Date]  
-**Questions or concerns:** [Your Email]  
-**Contribute to our inclusivity:** Open an issue on GitHub with suggestions
+**Last updated:** 10/26/2025  
+**Questions or concerns:** Isw26@pitt.edu

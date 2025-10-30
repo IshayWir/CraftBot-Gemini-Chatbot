@@ -176,7 +176,6 @@ watercolor-companion-bot/
 ├── Inclusive.md                 # Accessibility & equity statement
 ├── ProcessVerification.md       # Project checklist and AI use documentation
 ├── Training.md                  # System prompts and testing documentation
-├── UXDesign.md                  # User research (empathy map, personas, storyboard)
 ├── SystemMemory/                # Training data directory
 │   ├── watercolor-techniques.md
 │   ├── color-theory-guide.md

@@ -63,7 +63,7 @@ The Watercolor Companion Bot is a custom AI assistant built on Google Gemini Gem
 
 ## 🚀 How to Access
 
-**Live Bot:** [Insert your Gemini Gem link here]
+**Live Bot:** [\[Gemini Link\]](https://gemini.google.com/gem/1gXuZWPkFPVOY3iK8aTfIFX-YByZC-BRQ?usp=sharing)
 
 **To Use:**
 1. Click the link to open the Watercolor Companion Bot
@@ -176,7 +176,6 @@ watercolor-companion-bot/
 ├── Inclusive.md                 # Accessibility & equity statement
 ├── ProcessVerification.md       # Project checklist and AI use documentation
 ├── Training.md                  # System prompts and testing documentation
-├── UXDesign.md                  # User research (empathy map, personas, storyboard)
 ├── SystemMemory/                # Training data directory
 │   ├── watercolor-techniques.md
 │   ├── color-theory-guide.md
@@ -184,9 +183,6 @@ watercolor-companion-bot/
 │   ├── emotional-support-phrases.txt
 │   ├── materials-guide.md
 │   └── troubleshooting.md
-└── ProjectPresentation/         # Pitch deck and demo materials
-    ├── elevator-pitch.md
-    └── demo-screenshots/
 ```
 
 ---
@@ -259,11 +255,11 @@ This project is licensed under the MIT License - see [License.md](License.md) fo
 
 ## 📧 Contact & Support
 
-**Developer:** [Your Name]  
+**Developer:** Ishay Wirthiem
 **Institution:** University of Pittsburgh  
-**Course:** [Course Name/Number]  
-**Email:** [Your Email]  
-**GitHub:** [Your GitHub Profile]
+**Course:** ENGCMP 0600
+**Email:** ISW26
+**GitHub:** IshayWir
 
 **For Technical Issues:**
 - Open a GitHub issue in this repository
@@ -312,5 +308,3 @@ Whether you're here to learn a new skill, find peace in creativity, or simply pl
 Happy painting! 🎨💙
 
 ---
-
-*"Every artist was first an amateur." - Ralph Waldo Emerson*
